@@ -17,7 +17,7 @@ form.addEventListener('submit', function(e) {
     const mensagemSucesso = `Formulário validado, o valor do número B é maior do que o número A`;
     const mensagemError = `Formulário invalidado, tente novamente`;
 
-    formEValido = validaNumero(numeroA.value, numeroB.value);
+    formEValido = validaNumero(campoA, campoB);
     if (formEValido) {
         const containerMensagemSucesso = document.querySelector('.mensage');
         containerMensagemSucesso.innerHTML = mensagemSucesso;
